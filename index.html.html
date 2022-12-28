@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/icon.png">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="styles/index.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+<script src="validation.js"></script>
+
+
+</head>
+<body>
+   
+<div class="main-body">
+    <div class="header">
+        <div class="logo">
+            <a class="title" href="index.html">facebook</a>
+        </div>
+
+        <div class="login">
+            <form action="">
+                <table class="login-controls">
+                    <tr>
+                        <td><label class="login-label">Email or Mobile</label></td>
+                        <td ><label class="login-label">Password</label></td>
+                    </tr> 
+                    <tr>
+                        <td><input type="email number"></td>
+                        <td><input type="password"></td>
+                        <td><input type="submit" value="Login" id="login-button"></td>
+                    </tr> 
+                    <tr>
+                        <td></td>
+                        <td ><label><a id="forgotten" href="index.html">Forgotten account?</a></label></td>
+                    </tr>
+
+                </table>
+            </form>
+        </div>
+    </div>
+
+    
+
+    <div class="content">
+        <div class="image">
+            <b id="home-text">Facebook helps you communicate and share<br> with the people in your life.</b><br>
+            
+            <img id="home-image" src="Images/home.png" alt="We are sorry about the missing of image" >
+        </div>
+        <div class="signup">
+            <h1>Create an account</h1>
+            <h3>It is fast and easy.</h3>
+
+            <form method="post" class="signup-form" action="" id="signup-form">
+                <input required minlength="4" name="fname" id="fname" type="text" placeholder="First Name">
+                <input required minlength="4" name="lname" id="lname" type="text" placeholder="Last Name">
+                <br><br>
+                <input email:true required name="mailAddress" id="noe" type="email" placeholder="Mobile number or email">
+                <br><br>
+                <input minlength="6" maxlength="12" required name="password" id="np" type="password" placeholder="New password">
+                <br><br>
+                <label for="" id="opt-label">Birthday</label><br><br>
+                <select required name="day" class="dob" >
+                    <option value="">day</option>
+                    <option value="1">01</option>
+                </select>
+                <select class="dob" >
+                    <option value="">month</option>
+                    <option value="">jan</option>
+                </select>
+                <select class="dob" >
+                    <option value="">year</option>
+                    <option value="">2000</option>
+                </select><br><br>
+
+                <label class="radio" id="opt-label">Gender</label><br><br>
+                <input type="radio" name="gend">
+                <label class="mfo">Male</label>
+                <input class="radio" type="radio"  name="gend">
+                <label class="mfo">Female</label>
+                <input class="radio" type="radio"  name="gend">
+                <label class="mfo">Other</label>
+                <br>
+                <input id="sign-btn" type="submit" value="Sign up">
+               
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+</div>
+</body>
+</html>
